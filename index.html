@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class='box'>
+    <div class='box one'>
           <section class="slide-prev">前一张</section>
           <section class="slide-next">下一张</section>
 
@@ -23,7 +23,7 @@
           </ul>
     </div>
 
-    <div class='box'>
+    <div class='box' id="two">
             <section class="slide-prev">前一张</section>
             <section class="slide-next">下一张</section>
   
@@ -41,7 +41,14 @@
      <script src="js/jquery-3.3.1.js"></script>
      <script src="js/jQuery.ZYSlide.js"></script>
      <script>
-         $('.box').ZYSlide({speed:3000});
+        //  $('.box').ZYSlide({speed:3000}).css('background-color','red')
+
+         //  两个不同的轮播
+         $('.one').ZYSlide({delay:2000,speed:3000}).css('background-color','red');
+
+         $('#two').ZYSlide({speed:1000}).css('background-color','blue');
+
+
      
      </script>
 </body>
